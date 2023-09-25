@@ -1,0 +1,83 @@
+﻿<Page x:Class="WPFDashboard.MVVM.View.MoreView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFDashboard.MVVM.View"
+
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MoreView"
+      Background="Transparent">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Border Width="400"
+                    Height="200">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1 2">
+                        <GradientStop Color="#00172D" Offset="0.0"/>
+                        <GradientStop Color="#8b8000" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="League &#x0a;Standings"
+                                   Foreground="White"
+                                   FontSize="30"
+                                       Margin="20 10 10 0"/>
+
+
+                        <TextBlock Text="Top European Leagues"
+                                   Foreground="White"
+                                   FontSize="20"
+                                   Margin="20 30 10 0"/>
+                    </StackPanel>
+                    <Image Source="/Images/trophy.png" RenderTransformOrigin="0.834,-0.176" Margin="220,24,6,10" />
+                </Grid>
+            </Border>
+            <Border Width="400"
+                    Height="200"
+                    Margin="15 0 0 0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1 2">
+                        <GradientStop Color="#00172D" Offset="0.0"/>
+                        <GradientStop Color="#8b0000" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Past &#x0a;League Winners"
+                                   Foreground="White"
+                                   FontSize="30"
+                                       Margin="20 10 10 0"/>
+
+
+                        <TextBlock Text="Last Season's &#x0a;Champions"
+                                   Foreground="White"
+                                   FontSize="20"
+                                   Margin="20 30 10 0"/>
+                    </StackPanel>
+                    <Image Source="/Images/messiceleb.png" RenderTransformOrigin="0.834,-0.176" Margin="138,-54,-49,-54" />
+                </Grid>
+            </Border>
+            
+        </StackPanel>
+    </Grid>
+</Page>
